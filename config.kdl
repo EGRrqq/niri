@@ -67,18 +67,18 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Apps
-    Mod+Return { spawn "wezterm" "start" "--always-new-process"; }
-    Mod+Alt+Y { spawn "wezterm" "start" "--always-new-process" "--class" "niri-float" "--" "yazi"; }
-    Mod+T { spawn "Telegram"; }
-    Mod+B { spawn "brave"; }
-    Mod+Shift+O { spawn "obsidian"; }
-    Mod+D { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
-    Super+Alt+L { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
+    Mod+Return hotkey-overlay-title="Terminal" { spawn "wezterm" "start" "--always-new-process"; }
+    Mod+Alt+Y hotkey-overlay-title="File manager (yazi)" { spawn "wezterm" "start" "--always-new-process" "--class" "niri-float" "--" "yazi"; }
+    Mod+T hotkey-overlay-title="Telegram" { spawn "Telegram"; }
+    Mod+B hotkey-overlay-title="Browser" { spawn "brave"; }
+    Mod+Shift+O hotkey-overlay-title="Notes (Obsidian)" { spawn "obsidian"; }
+    Mod+D hotkey-overlay-title="Open launcher" { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
+    Super+Alt+L hotkey-overlay-title="Lock screen" { spawn "noctalia-shell" "ipc" "call" "lockScreen" "lock"; }
 
     // Pomodoro (noctalia plugin)
-    Mod+Shift+P { spawn "noctalia-shell" "ipc" "call" "plugin:pomodoro" "start"; }
-    Mod+Shift+Z { spawn "noctalia-shell" "ipc" "call" "plugin:pomodoro" "pause"; }
-    Mod+Shift+X { spawn "noctalia-shell" "ipc" "call" "plugin:pomodoro" "reset"; }
+    Mod+Shift+P hotkey-overlay-title="Pomodoro: start" { spawn "noctalia-shell" "ipc" "call" "plugin:pomodoro" "start"; }
+    Mod+Shift+Z hotkey-overlay-title="Pomodoro: pause" { spawn "noctalia-shell" "ipc" "call" "plugin:pomodoro" "pause"; }
+    Mod+Shift+X hotkey-overlay-title="Pomodoro: reset" { spawn "noctalia-shell" "ipc" "call" "plugin:pomodoro" "reset"; }
 
     // Window management
     Mod+Q repeat=false { close-window; }
