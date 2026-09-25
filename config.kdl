@@ -67,10 +67,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Apps
-    Mod+Return { spawn "wezterm"; }
-    Mod+Shift+Return { spawn "wezterm" "cli" "spawn" "--new-window"; }
-    Mod+Alt+Y { spawn "wezterm" "start" "--class" "niri-float" "--" "yazi"; }
-    Mod+T { spawn "telegram-desktop"; }
+    Mod+Return { spawn "wezterm" "start" "--always-new-process"; }
+    Mod+Alt+Y { spawn "wezterm" "start" "--always-new-process" "--class" "niri-float" "--" "yazi"; }
+    Mod+T { spawn "Telegram"; }
     Mod+B { spawn "brave"; }
     Mod+Shift+O { spawn "obsidian"; }
     Mod+D { spawn "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
